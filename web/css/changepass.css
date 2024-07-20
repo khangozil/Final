@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-image: url("https://png.pngtree.com/background/20230519/original/pngtree-all-the-green-vegetables-on-the-table-picture-image_2656422.jpg");
+    background-size: cover; background-repeat: no-repeat;
+}
+
+
+.container{
+    background-color: lightgray;
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.container header{
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: 500;
+    text-align: center;
+
+}
+
+.container .form{
+    margin-top: 30px;
+}
+
+.form .input-box{
+    width: 100%;
+    margin-top: 20px;
+
+}
+
+.input-box label{
+    color: #333;
+}
+
+.form .input-box input{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    color: #707070;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0 15px;
+}
+
+.input-box input{
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.form .remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    margin-top: 20px;
+}
+
+.remember-forgot label input{
+    margin-right: 3px;
+}
+
+.remember-forgot a{
+    color: #333;
+    text-decoration: none;
+}
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+.form .btn-prime{
+    font-size: 14px;
+	color: #ffffff;
+	font-weight: 800;
+	text-transform: uppercase;
+	display: inline-block;
+	padding: 13px 30px 12px;
+	background: #7fad39;
+	border: none;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.input-box span{
+    font-size: 14px;
+    color: red;
+    display: flex;
+    margin-top: 5px;
+}
+
+
+/* Reponsive */
+@media  screen and (max-width: 500px) {
+    .form .column{
+        flex-wrap: wrap;
+    }
+    .form :where(.gender-option, .gender){
+        row-gap: 15px;
+    }
+}
